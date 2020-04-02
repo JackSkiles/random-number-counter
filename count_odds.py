@@ -7,7 +7,9 @@ result = 0
 # let's look at the numbers form 0 to 5000
 num = 0
 while num <= 5000:
-    print(num)
+    is_odd = num % 2 != 0
+    if is_odd:
+       result += num
     num += 1
 
 
