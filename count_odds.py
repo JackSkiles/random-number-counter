@@ -1,14 +1,19 @@
 # Add the odd numbers between 0 and 5000
 
-# setup
+# Result variable that will add sum of odd numbers.
 result = 0
 
-# work1
-# let's look at the numbers form 0 to 5000
+# Creates num variable that will iteriate in a while loop.
 num = 0
-while num <= 5000:
+
+# Asks user to input number to add the sum of and converts it to an integer.
+number_to_check = input("please input a number greater than 1: ")
+number_to_check = int(number_to_check)
+
+while num <= number_to_check:
     is_odd = num % 2 != 0
     if is_odd:
+          #print(num)
        result += num
     num += 1
 
