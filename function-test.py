@@ -1,9 +1,6 @@
 
 
 def test_function(number, yes):
-    counter = 0
-    while counter < number:
-        print(yes)
-        counter += 1
-
-print(test_function(4, 'Hello There'))
+    return yes * number
+hello = test_function(5, test_function(3, ' Hello There\n'))
+print(hello)
